@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
-  <body style = "background-image: url(./background.jpg); background-size: cover; height: 100vh;">
+  <body style = "background-image: url(./imgs/background.jpg); background-size: cover; height: 100vh;">
 
     <div class="basic" style="top: 0; left: 0; border-radius: 0 0 14px 14px; width: 100%; backdrop-filter: blur(25px); background-color: rgba(256, 256, 256, 0.25); display: flex; justify-content: space-between; flex: 1;">
 
@@ -39,7 +39,7 @@
 
     <div class="open" id="welcome.webos_exe_open" style=" background-color: #ffffff;">
     <p class="basic" style="position: static; font-size: 0.75em;">open webos welcome</p>
-    <img style="width: 64px; height: 64px" src="./Welcome_img.png" />
+    <img style="width: 64px; height: 64px" src="./imgs/Welcome_img.png" />
     </div>
 
     <div class="webos_exe" id="welcome.webos_exe" style="background-color:#ffffff;">
@@ -55,7 +55,7 @@
 
     <div class="open" id="helloworld_open" style=" background-color: #ec8917;">
     <p class="basic" style="position: static; font-size: 0.75em;">open helloworld</p>
-    <img style="width: 64px; height: 64px" src="./helloworld.png" />
+    <img style="width: 64px; height: 64px" src="./imgs/helloworld.png" />
     </div>
 
     <div class="webos_exe" id="helloworld" style=" background-color: #ec8917; padding: 8px;">
@@ -66,17 +66,23 @@
     </div>
 
     <p>Hello world!</p>
-    <img style="width: 128px; height: 64px" src="./SnowdinForMyOS.jpg" />
+    <img style="width: 128px; height: 64px" src="./imgs/SnowdinForMyOS.jpg" />
     <p style="font-family: Comic Sans MS, Comic Sans, cursive, sans-serif">Woo hoo! Comic Sans </p>
     </div>
   
     <div class="open" id="dino.webos_exe_open" style=" background-color: #ffffff;">
     <p class="basic" style="position: static; font-size: 0.75em;">open dino game thing</p>
-    <img style="width: 64px; height: 64px" src="./dinogame.png" />
+    <img style="width: 64px; height: 64px" src="./imgs/dinogame.png" />
     </div>
 
     <div class="webos_exe" id="dino.webos_exe" style="background-color:#ffffff;">
-    
+
+    <div class="header" id="dino.webos_exe_header">
+    <p style="padding: 0; margin: 0 5px 0 0; cursor: default;">dino.webos_exe</p>
+    <p class="close" id="dino.webos_exe_close">X</p>
+    </div>
+
+      <canvas id="dinogame" width="305" height="100"></canvas>
     </div>
     
     <script src="script.js"></script>
